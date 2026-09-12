@@ -1,8 +1,8 @@
-from openai import OpenAI
+from openai import OpenAI, api_key
  
 # pip install openai 
 # if you saved the key under a different environment variable name, you can do something like:
-client = OpenAI(api_key="your-key",)
+client = OpenAI(api_key=api_key,)
 
 completion = client.chat.completions.create(
   model="gpt-3.5-turbo",
