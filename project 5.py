@@ -23,7 +23,7 @@ client= OpenAI(api_key=openai_api_key)
 
 recognizer = sr.Recognizer()
 engine = pyttsx3.init() 
-newsapi = ("NEWS_API_KEY")
+newsapi = news_api_key
 
 
 def speak_old(text):
